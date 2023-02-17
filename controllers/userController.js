@@ -1,13 +1,13 @@
 const { User, Thought } = require("../models");
 
 module.exports = {
-
+  // fetch all users
   fetchUsers(req, res) {
     User.find()
       .then((users) => res.json(users))
       .catch((err) => res.status(500).json(err));
   },
- 
+  // fetch a single user
   fetchOneUser(req, res) {
     User.findOne({ _id: req.params.userId })
       .select("-__v")
@@ -19,13 +19,13 @@ module.exports = {
       .catch((err) => res.status(500).json(err));
   },
 
-  
+  // create a new user
   userCreation(req, res) {
     User.create(req.body)
       .then((user) => res.json(user))
       .catch((err) => res.status(500).json(err));
   },
-  
+  // Delete a user and associated thoughts
   removeUser(req, res) {
     User.findOneAndDelete({ _id: req.params.userId })
       .then((user) =>
@@ -73,7 +73,7 @@ module.exports = {
       });
   },
 
- 
+  // Delete a friend
   removeFriend(req, res) {
     User.findOneAndUpdate(
       { _id: req.params.userId },
