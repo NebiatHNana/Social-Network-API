@@ -22,7 +22,11 @@ npm run start
 Test with [postman]
 Walkthrough video 
 
-https://drive.google.com/file/d/1_iAj4B5OCVH77zBPzw1A6QDX6sCMpXhE/view
+
+
+https://user-images.githubusercontent.com/104470467/220419629-e36385db-52aa-4d84-8602-c7dee83b293a.mp4
+
+
 
 ![Screen Shot 2023-02-16 at 9 14 41 PM](https://user-images.githubusercontent.com/104470467/219532486-a67f6d8b-3568-4f97-b03d-a548356fc565.png)
 
